@@ -1,4 +1,15 @@
 # Global-Illumination-Building-a-RayTracer
+
+## Checkpoint 2
+- Bonus :Add another object type to your scene
+    - E.g. cone, torus, cylinder
+ 
+
+#### Screenshots
+![Snapshot Goal 2](output/snapshot/checkpoint2.png "Snapshot Goal 2")
+
+
+
 ## Checkpoint 1
 - This scene has 3 objects:
     - 2 spheres

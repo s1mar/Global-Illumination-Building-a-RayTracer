@@ -1,5 +1,7 @@
 import math.Point
 import materials.MaterialUniform
+import materials.MaterialWithChecks
+import objects.Cone
 import objects.Plane
 import objects.Sphere
 import scene.Camera
@@ -32,9 +34,10 @@ fun createScene(): Scene {
             LightPoint(Point(2f, 2f, 4f), intensityDiffuse = Point(2.0f))
         ),
         objects = listOf(
-            Sphere(Point(-1f, 1.0f, 0f), 0.6f, MaterialUniform(Point(0f, 0.6f, 0f),0.0f)),
-            Sphere(Point(-2f, 1.3f, 0f), 0.3f, MaterialUniform(Point(0.5f, 0f, 0f),0.0f)),
-            Plane(Point.origin(), Point.yUnit(),  MaterialUniform(Point(0.5f, 0f, 0.5f)))
+            Sphere(Point(-1f, 1.0f, 0f), 0.6f, MaterialUniform(Point(0f, 0.0f, 0f),100.0f)),
+            Sphere(Point(-2f, 1.3f, 0f), 0.3f, MaterialUniform(Point(0.5f, 1f, 0f),0.0f)),
+            Cone(Point(0.5f, 1.2f, 1.2f), 0.2f,1f ,MaterialUniform(Point(0.5f, 0.0f, 0f),0.2f)),
+            Plane(Point.origin(), Point.yUnit(), MaterialWithChecks())
         )
     )
 }
