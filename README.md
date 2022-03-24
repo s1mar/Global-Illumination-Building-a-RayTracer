@@ -1,5 +1,35 @@
 # Global-Illumination-Building-a-RayTracer
 
+## Checkpoint 5
+- Make one sphere reflective (kr ¹ 0.0)
+- Make other sphere non-reflective (kr = 0.0)
+- Make the floor non-reflective (kr = 0.0)
+- Make all objects non-transparent (kt = 0.0)
+
+
+#### Screenshots
+![Checkpoint 5](output/snapshot/c5.png "Checkpoint 5")
+
+
+## Checkpoint 4
+Extras
+- Implement another procedural shader or texture (your
+choice)
+
+#### Screenshots
+![Checkpoint 4](output/snapshot/c4.png "Checkpoint 4")
+
+## Checkpoint 3
+Extras
+- Add support for multiple light sources
+- Phong-Blinn
+- supersampling
+
+#### Screenshots
+![Checkpoint 3](output/snapshot/c3.png "Checkpoint 3")
+![Checkpoint 3](output/snapshot/c3m.png "Multiple light sources")
+
+
 ## Checkpoint 2
 - Bonus :Add another object type to your scene
     - E.g. cone, torus, cylinder
