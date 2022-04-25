@@ -1,5 +1,16 @@
 # Global-Illumination-Building-a-RayTracer
 
+## Checkpoint 6
+-  Make one sphere transparent (kt = 0.8)
+-  Make other sphere non-transparent
+-  Extra attempted
+
+![Checkpoint 6](output/snapshot/ch6.png "Checkpoint 6")
+
+For extra point:
+- Adjust shadow ray based upon transparency of objects.
+![Checkpoint 6](output/snapshot/ch6ex.png "Checkpoint 6 extra")
+
 ## Checkpoint 5
 - Make one sphere reflective (kr ¹ 0.0)
 - Make other sphere non-reflective (kr = 0.0)
