@@ -9,11 +9,22 @@ import java.io.File
 import javax.imageio.ImageIO
 
 class Scene(
+    val rdiv: Int =250,
+    var wdiv: Float = 1.0f,
+    var ranger: Int = 255,
+    val wardOrRein:Int = 0, // 1 for Ward and 2 for Rein
     val camera: Camera,
     val lights: List<Light>,
     val objects: List<Object>
 ) {
     fun render(onProgress: ((Int) -> Unit)? = null): List<List<Point>> {
+        if(wardOrRein==0){
+            wdiv = 1.0f
+        }
+        else if(wardOrRein==2){
+            ranger-=rdiv
+        }
+
         val screen = camera.screen
         val image = List(screen.height) {
             List(screen.width) {
@@ -37,7 +48,7 @@ class Scene(
         return image
     }
 
-    private fun traceRay(origin: Point, direction: Point, maxDepth: Int = 3): Point {
+    private fun traceRay(origin: Point, direction: Point, maxDepth: Int = 3, lIn:Int = 0): Point {
         val color = Point()
         var reflection = 1f
 
@@ -56,7 +67,7 @@ class Scene(
             nearestObject?.let {
                 val intersection = origin + minDistance * direction
                 val normal = it.getNormalVectorSurface(intersection)
-                color.set(color + reflection * it.getLightColor(origin, direction, minDistance, this))
+                color.set(color + reflection *wdiv* it.getLightColor(origin, direction, minDistance, this))
                 origin.set(intersection + 1e-3f * normal)
                 direction.set(direction.reflection(normal))
                 reflection *= it.material.getReflectivity(intersection)
@@ -77,7 +88,23 @@ class Scene(
         ImageIO.write(buffer, "png", file)
     }
 
-    companion object {
+    fun toBufferedImage(image: List<List<Point>>): BufferedImage {
+        val height = image.size
+        val width = image.first().size
+        return BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR).also {
+            image.forEachIndexed { y, list ->
+                list.forEachIndexed { x, p ->
+                    val red = (p.x * ranger).toInt()
+                    val green = (p.y * ranger).toInt()
+                    val blue = (p.z * ranger).toInt()
+                    val color = (red shl 16) or (green shl 8) or blue
+                    it.setRGB(x, y, color)
+                }
+            }
+        }
+    }
+
+    companion object{
         fun toBufferedImage(image: List<List<Point>>): BufferedImage {
             val height = image.size
             val width = image.first().size
@@ -94,4 +121,5 @@ class Scene(
             }
         }
     }
+
 }
