@@ -8,17 +8,17 @@
 
 ## Checkpoint 7
 -  Low-Ward
-![Low-Ward](output/snapshot/ToneLow.png "Low-Ward")
+![Low-Ward](output/snapshot/%20ToneLow.png "Low-Ward")
 - Low-Reinhard
-![Low-Reinhard](output/snapshot/ToneLowR.png "Low-Reinhard)
+![Low-Reinhard](output/snapshot/%20ToneLowR.png "Low-Reinhard)
 -  Med-Ward
-![Med-Ward](output/snapshot/ToneMed.png "Med-Ward")
+![Med-Ward](output/snapshot/%20ToneMed.png "Med-Ward")
 - Med-Reinhard
-![Med-Reinhard](output/snapshot/ToneMedR.png "Med-Reinhard)
+![Med-Reinhard](output/snapshot/%20ToneMedR.png "Med-Reinhard)
 -  High-Ward
-![High-Ward](output/snapshot/ToneHigh.png "High-Ward")
+![High-Ward](output/snapshot/%20ToneHigh.png "High-Ward")
 - High-Reinhard
-![High-Reinhard](output/snapshot/ToneHighR.png "High-Reinhard)
+![High-Reinhard](output/snapshot/%20ToneHighR.png "High-Reinhard)
 
 ## Checkpoint 6
 -  Make one sphere transparent (kt = 0.8)
