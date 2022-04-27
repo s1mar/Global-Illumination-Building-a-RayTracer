@@ -2,7 +2,7 @@
 
 ## Bloopers
  - Ray-Tracing On Halloween
- ![Halloween](output/snapshot/accident.png "Halloween")
+ ![Halloween](output/snapshot/Accident.png "Halloween")
  - Ray-Tracing on other days
   ![Normal](output/snapshot/%20normal.png "Normal")
 
