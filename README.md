@@ -2,23 +2,23 @@
 
 ## Bloopers
  - Ray-Tracing On Halloween
- ![Halloween](output/snapshot/accident(2).png "Halloween")
+ ![Halloween](output/snapshot/accident.png "Halloween")
  - Ray-Tracing on other days
-  ![Normal](output/snapshot/normal.png "Normal")
+  ![Normal](output/snapshot/%20normal.png "Normal")
 
 ## Checkpoint 7
 -  Low-Ward
 ![Low-Ward](output/snapshot/%20ToneLow.png "Low-Ward")
 - Low-Reinhard
-![Low-Reinhard](output/snapshot/%20ToneLowR.png "Low-Reinhard)
+![Low-Reinhard](output/snapshot/ToneLowr.png "Low-Reinhard)
 -  Med-Ward
-![Med-Ward](output/snapshot/%20ToneMed.png "Med-Ward")
+![Med-Ward](output/snapshot/%20ToneMedr.png "Med-Ward")
 - Med-Reinhard
 ![Med-Reinhard](output/snapshot/%20ToneMedR.png "Med-Reinhard)
 -  High-Ward
 ![High-Ward](output/snapshot/%20ToneHigh.png "High-Ward")
 - High-Reinhard
-![High-Reinhard](output/snapshot/%20ToneHighR.png "High-Reinhard)
+![High-Reinhard](output/snapshot/%20ToneHighr.png "High-Reinhard)
 
 ## Checkpoint 6
 -  Make one sphere transparent (kt = 0.8)
