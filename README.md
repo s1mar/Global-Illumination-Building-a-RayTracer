@@ -12,7 +12,7 @@
 - Low-Reinhard
 ![Low-Reinhard](output/snapshot/ToneLowr.png "Low-Reinhard)
 -  Med-Ward
-![Med-Ward](output/snapshot/%20ToneMedr.png "Med-Ward")
+![Med-Ward](output/snapshot/%20ToneMedR.png "Med-Ward")
 - Med-Reinhard
 ![Med-Reinhard](output/snapshot/%20ToneMedR.png "Med-Reinhard)
 -  High-Ward
