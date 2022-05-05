@@ -4,7 +4,7 @@
  - Ray-Tracing On Halloween
  ![Halloween](output/snapshot/Accident.png "Halloween")
  - Ray-Tracing on other days
-  ![Normal](output/snapshot/%20normal.png "Normal")
+  ![Normal](output/snapshot/normal.png "Normal")
 
 ## Checkpoint 7
 - Low-Ward
