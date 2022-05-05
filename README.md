@@ -64,11 +64,12 @@ Extras
 ## Checkpoint 2
 - Bonus :Add another object type to your scene
     - E.g. cone, torus, cylinder
+- Bonus : A different angle    
  
 
 #### Screenshots
 ![Snapshot Goal 2](output/snapshot/checkpoint2.png "Snapshot Goal 2")
-
+![Snapshot Goal 2](output/snapshot/cylinder.png "Snapshot Goal 2")
 
 
 ## Checkpoint 1

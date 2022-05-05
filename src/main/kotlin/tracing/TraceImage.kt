@@ -3,10 +3,7 @@ import materials.MaterialUniform
 import materials.MaterialWithChecks
 import materials.MaterialWithChecksNR
 import materials.MaterialWithChecksRY
-import objects.Cone
-import objects.Plane
-import objects.PlaneLimited
-import objects.Sphere
+import objects.*
 import scene.Camera
 import scene.Scene
 import scene.lights.LightPoint
@@ -20,7 +17,7 @@ val COLOR_GREEN:Point = Point(0f, 0.5f, 0f)
 val R_CORRECTOR = 0
 fun main() {
 
-    IMG_OUTPUT_PATH.also { File(it).mkdirs()
+  /*  IMG_OUTPUT_PATH.also { File(it).mkdirs()
         createScene_ToneLow().renderToFile("$IMG_OUTPUT_PATH ToneLow.png") {
             println("$it%")
         }
@@ -53,7 +50,7 @@ fun main() {
         createScene_ToneHighR().renderToFile("$IMG_OUTPUT_PATH ToneHighR.png") {
             println("$it%")
         }
-    }
+    }*/
 
     IMG_OUTPUT_PATH.also { File(it).mkdirs()
         createScene().renderToFile("$IMG_OUTPUT_PATH normal.png") {
@@ -128,7 +125,7 @@ fun createScene(): Scene {
         objects = listOf(
             Sphere(Point(0.6f, 0.35f, -0.6f), 0.35f, MaterialUniform(COLOR_BLUE)),
             Sphere(Point(-0.8f, 0.2f, -0.7f), 0.2f, MaterialUniform(COLOR_GREEN)),
-            Sphere(Point(0f, 0.3f, -1f), 0.3f, MaterialUniform(COLOR_RED)),
+            Cylinder(Point(0f, 0.3f, -1f), 0.3f,0.6f, MaterialUniform(COLOR_RED)),
             Plane(Point.origin(), Point.yUnit(), MaterialWithChecks())
         )
     )
